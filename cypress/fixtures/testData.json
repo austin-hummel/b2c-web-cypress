@@ -1,0 +1,14 @@
+{
+  "testProduction": {
+    "productionId": "123456",
+    "quantity": 2,
+    "section": "FLOOR",
+    "row": "A",
+    "seats": ["1", "2"]
+  },
+  "testUser": {
+    "email": "test@example.com",
+    "firstName": "Test",
+    "lastName": "User"
+  }
+} 
