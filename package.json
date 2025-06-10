@@ -7,10 +7,12 @@
     "cypress:run": "cypress run",
     "test:file": "cypress run --spec",
     "test:pattern": "cypress run --spec \"cypress/e2e/**/*$PATTERN*.cy.js\"",
-    "test:smoke": "cypress run --spec \"cypress/e2e/**/*.cy.js\" --env grep=\"@smoke\""
+    "test:smoke": "cypress run --spec \"cypress/e2e/**/*.cy.js\" --env grep=\"@smoke\"",
+    "cypress:parallel" : "cypress-parallel -s cypress:run -t 4 -d './cypress/e2e'"
   },
   "devDependencies": {
     "cypress": "^14.4.1",
-    "cypress-iframe": "^1.0.1"
+    "cypress-iframe": "^1.0.1",
+    "cypress-parallel": "^0.15.0"
   }
 }
